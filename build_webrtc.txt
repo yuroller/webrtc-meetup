@@ -1,0 +1,36 @@
+windows
+wget https://storage.googleapis.com/chrome-infra/depot_tools.zip
+set PATH=C:\progetti\depot_tools;%PATH%
+set DEPOT_TOOLS_WIN_TOOLCHAIN=0
+gclient
+fetch webrtc
+gclient sync --with_branch_heads
+cd src
+git checkout -b meetup73 remotes/branch-heads/m73
+gclient sync <- sync nuova branch
+
+cd build
+apply patch:
+
+diff --git a/config/win/BUILD.gn b/config/win/BUILD.gn
+index f27f192e3..ae0f0a5ba 100644
+--- a/config/win/BUILD.gn
++++ b/config/win/BUILD.gn
+@@ -438,7 +438,8 @@ config("default_crt") {
+       configs = [ ":dynamic_crt" ]
+     } else {
+       # Desktop Windows: static CRT.
+-      configs = [ ":static_crt" ]
++      #configs = [ ":static_crt" ]
++      configs = [ ":dynamic_crt" ]
+     }
+   }
+ }
+
+cd ..
+gn gen out\Debug --ide=vs --args="is_clang=false is_debug=true rtc_include_tests=false"
+ninja -C out\Debug
+
+gn gen out\Release --ide=vs --args="is_clang=false is_debug=false rtc_include_tests=false"
+ninja -C out\Release
+

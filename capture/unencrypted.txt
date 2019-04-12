@@ -1,0 +1,104 @@
+Unencrypted:
+
+CreateSessionDescription->OnSuccess
+v=0
+o=- 4490127433561825396 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 RTP/SAVPF 109
+c=IN IP4 0.0.0.0
+b=AS:30
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:0n6F
+a=ice-pwd:iehOktirKnR1TGMPxpHyIh2K
+a=ice-options:trickle
+a=mid:data
+a=sendrecv
+a=rtcp-mux
+a=crypto:0 AES_CM_128_HMAC_SHA1_80 inline:gj2hJz0xXUkMocO3HTN1VW7r/A50VPzp+X69BOfp
+a=rtpmap:109 google-data/90000
+a=ssrc:1766317927 cname:OH6umuP9m/O4/20u
+a=ssrc:1766317927 msid:Hello Hello
+a=ssrc:1766317927 mslabel:Hello
+a=ssrc:1766317927 label:Hello
+
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 58270 typ host generation 0 ufrag 0n6F network-id 1
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 58271 typ host generation 0 ufrag 0n6F network-id 2
+OnIceCandidate: candidate:2723553973 1 tcp 1518280447 10.0.0.105 50808 typ host tcptype passive generation 0 ufrag 0n6F network-id 1
+OnIceCandidate: candidate:3401144682 1 tcp 1518214911 192.168.99.1 50809 typ host tcptype passive generation 0 ufrag 0n6F network-id 2
+Received session description :v=0
+o=- 4490127433561825396 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 RTP/SAVPF 109
+c=IN IP4 0.0.0.0
+b=AS:30
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:0n6F
+a=ice-pwd:iehOktirKnR1TGMPxpHyIh2K
+a=ice-options:trickle
+a=mid:data
+a=sendrecv
+a=rtcp-mux
+a=crypto:0 AES_CM_128_HMAC_SHA1_80 inline:gj2hJz0xXUkMocO3HTN1VW7r/A50VPzp+X69BOfp
+a=rtpmap:109 google-data/90000
+a=ssrc:1766317927 cname:OH6umuP9m/O4/20u
+a=ssrc:1766317927 msid:Hello Hello
+a=ssrc:1766317927 mslabel:Hello
+a=ssrc:1766317927 label:Hello
+CreateSessionDescription->OnSuccess
+v=0
+o=- 1090369112641526771 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 RTP/SAVPF 109
+c=IN IP4 0.0.0.0
+b=AS:30
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Tcrf
+a=ice-pwd:2Aoyhu/mResTPFpeOUbipOGy
+a=ice-options:trickle
+a=mid:data
+a=sendrecv
+a=rtcp-mux
+a=crypto:0 AES_CM_128_HMAC_SHA1_80 inline:k1vrzFruFzEl8JPNXCTaRr63RoCPab+02cbUcRYF
+a=rtpmap:109 google-data/90000
+a=ssrc:388459995 cname:VMniP9qLDwpj97SJ
+a=ssrc:388459995 msid:Hello Hello
+a=ssrc:388459995 mslabel:Hello
+a=ssrc:388459995 label:Hello
+
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 58272 typ host generation 0 ufrag Tcrf network-id 1
+Received session description :v=0
+o=- 1090369112641526771 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 RTP/SAVPF 109
+c=IN IP4 0.0.0.0
+b=AS:30
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Tcrf
+a=ice-pwd:2Aoyhu/mResTPFpeOUbipOGy
+a=ice-options:trickle
+a=mid:data
+a=sendrecv
+a=rtcp-mux
+a=crypto:0 AES_CM_128_HMAC_SHA1_80 inline:k1vrzFruFzEl8JPNXCTaRr63RoCPab+02cbUcRYF
+a=rtpmap:109 google-data/90000
+a=ssrc:388459995 cname:VMniP9qLDwpj97SJ
+a=ssrc:388459995 msid:Hello Hello
+a=ssrc:388459995 mslabel:Hello
+a=ssrc:388459995 label:Hello
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 58273 typ host generation 0 ufrag Tcrf network-id 2
+Data channel is open
+Data channel is open
+Text message received='Message from caller'
+Text message received='Message from receiver'

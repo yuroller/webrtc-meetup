@@ -1,0 +1,413 @@
+Stun Debug:
+
+(audio_processing_impl.cc:424): Capture analyzer activated: 0
+Capture post processor activated: 0
+Render pre processor activated: 0
+(webrtc_video_engine.cc:445): WebRtcVideoEngine::WebRtcVideoEngine()
+(webrtc_voice_engine.cc:199): WebRtcVoiceEngine::WebRtcVoiceEngine
+(webrtc_voice_engine.cc:222): WebRtcVoiceEngine::Init
+(webrtc_voice_engine.cc:229): Supported send codecs in order of preference:
+(webrtc_voice_engine.cc:232): opus/48000/2 { minptime=10 useinbandfec=1 } (111)
+(webrtc_voice_engine.cc:232): ISAC/16000/1 (103)
+(webrtc_voice_engine.cc:232): ISAC/32000/1 (104)
+(webrtc_voice_engine.cc:232): G722/8000/1 (9)
+(webrtc_voice_engine.cc:232): ILBC/8000/1 (102)
+(webrtc_voice_engine.cc:232): PCMU/8000/1 (0)
+(webrtc_voice_engine.cc:232): PCMA/8000/1 (8)
+(webrtc_voice_engine.cc:232): CN/32000/1 (106)
+(webrtc_voice_engine.cc:232): CN/16000/1 (105)
+(webrtc_voice_engine.cc:232): CN/8000/1 (13)
+(webrtc_voice_engine.cc:232): telephone-event/48000/1 (110)
+(webrtc_voice_engine.cc:232): telephone-event/32000/1 (112)
+(webrtc_voice_engine.cc:232): telephone-event/16000/1 (113)
+(webrtc_voice_engine.cc:232): telephone-event/8000/1 (126)
+(webrtc_voice_engine.cc:235): Supported recv codecs in order of preference:
+(webrtc_voice_engine.cc:238): opus/48000/2 { minptime=10 useinbandfec=1 } (111)
+(webrtc_voice_engine.cc:238): ISAC/16000/1 (103)
+(webrtc_voice_engine.cc:238): ISAC/32000/1 (104)
+(webrtc_voice_engine.cc:238): G722/8000/1 (9)
+(webrtc_voice_engine.cc:238): ILBC/8000/1 (102)
+(webrtc_voice_engine.cc:238): PCMU/8000/1 (0)
+(webrtc_voice_engine.cc:238): PCMA/8000/1 (8)
+(webrtc_voice_engine.cc:238): CN/32000/1 (106)
+(webrtc_voice_engine.cc:238): CN/16000/1 (105)
+(webrtc_voice_engine.cc:238): CN/8000/1 (13)
+(webrtc_voice_engine.cc:238): telephone-event/48000/1 (110)
+(webrtc_voice_engine.cc:238): telephone-event/32000/1 (112)
+(webrtc_voice_engine.cc:238): telephone-event/16000/1 (113)
+(webrtc_voice_engine.cc:238): telephone-event/8000/1 (126)
+(audio_device_impl.cc:75): webrtc::AudioDeviceModule::Create
+(audio_device_impl.cc:82): webrtc::AudioDeviceModule::CreateForTest
+(audio_device_buffer.cc:61): AudioDeviceBuffer::ctor
+(audio_device_impl.cc:125): webrtc::AudioDeviceModuleImpl::AudioDeviceModuleImpl
+(audio_device_impl.cc:129): webrtc::AudioDeviceModuleImpl::CheckPlatform
+(audio_device_impl.cc:134): current platform is Win32
+(audio_device_impl.cc:159): webrtc::AudioDeviceModuleImpl::CreatePlatformSpecificObjects
+(audio_device_impl.cc:941): webrtc::AudioDeviceModuleImpl::PlatformAudioLayer
+(audio_device_impl.cc:181): Attempting to use the Windows Core Audio APIs...
+(audio_device_core_win.cc:436): webrtc::AudioDeviceWindowsCore::AudioDeviceWindowsCore created
+(audio_device_core_win.cc:1918): nChannels=2, nSamplesPerSec=48000 is not supported. Closest match: nChannels=2, nSamplesPerSec=44100
+(audio_device_core_win.cc:1918): nChannels=1, nSamplesPerSec=48000 is not supported. Closest match: nChannels=2, nSamplesPerSec=44100
+(audio_device_core_win.cc:533): webrtc::AudioDeviceWindowsCore::~AudioDeviceWindowsCore destroyed
+(audio_device_core_win.cc:580): AudioDeviceWindowsCore::~AudioDeviceWindowsCore() the Avrt DLL module is now unloaded
+(audio_device_core_win.cc:436): webrtc::AudioDeviceWindowsCore::AudioDeviceWindowsCore created
+(audio_device_impl.cc:184): Windows Core Audio APIs will be utilized
+(audio_device_impl.cc:314): webrtc::AudioDeviceModuleImpl::AttachAudioBuffer
+(audio_device_buffer.cc:178): SetRecordingSampleRate(0)
+(audio_device_buffer.cc:184): SetPlayoutSampleRate(0)
+(audio_device_buffer.cc:198): SetRecordingChannels(0)
+(audio_device_buffer.cc:204): SetPlayoutChannels(0)
+(audio_device_impl.cc:334): webrtc::AudioDeviceModuleImpl::Init
+(audio_device_impl.cc:684): webrtc::AudioDeviceModuleImpl::SetPlayoutDevice
+(audio_device_impl.cc:367): webrtc::AudioDeviceModuleImpl::InitSpeaker
+(audio_device_impl.cc:582): webrtc::AudioDeviceModuleImpl::StereoPlayoutIsAvailable
+(audio_device_impl.cc:589): output: 1
+(audio_device_impl.cc:594): webrtc::AudioDeviceModuleImpl::SetStereoPlayout(1)
+(audio_device_buffer.cc:204): SetPlayoutChannels(2)
+(audio_device_impl.cc:746): webrtc::AudioDeviceModuleImpl::SetRecordingDevice
+(audio_device_impl.cc:373): webrtc::AudioDeviceModuleImpl::InitMicrophone
+(audio_device_impl.cc:536): webrtc::AudioDeviceModuleImpl::StereoRecordingIsAvailable
+(audio_device_impl.cc:543): output: 1
+(audio_device_impl.cc:548): webrtc::AudioDeviceModuleImpl::SetStereoRecording(1)
+(audio_device_buffer.cc:198): SetRecordingChannels(2)
+(audio_device_impl.cc:853): webrtc::AudioDeviceModuleImpl::RegisterAudioCallback
+(audio_device_buffer.cc:79): webrtc::AudioDeviceBuffer::RegisterAudioCallback
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 50, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, extended_filter_aec: 0, delay_agnostic_aec: 0, experimental_ns: 0, residual_echo_detector: 1, }
+(audio_device_impl.cc:869): webrtc::AudioDeviceModuleImpl::BuiltInAECIsAvailable
+(audio_device_impl.cc:872): output: 1
+(audio_device_impl.cc:877): webrtc::AudioDeviceModuleImpl::EnableBuiltInAEC(1)
+(audio_device_impl.cc:880): output: 0
+(webrtc_voice_engine.cc:416): Disabling EC since built-in EC will be used instead
+(audio_processing_impl.cc:697): Highpass filter activated: 0
+(audio_processing_impl.cc:711): Gain Controller 2 activated: 0
+(audio_processing_impl.cc:713): Pre-amplifier activated: 0
+(apm_helpers.cc:90): Echo control set to 0 with mode 0
+(audio_device_impl.cc:885): webrtc::AudioDeviceModuleImpl::BuiltInAGCIsAvailable
+(audio_device_generic.cc:27): webrtc::AudioDeviceGeneric::BuiltInAGCIsAvailable: Not supported on this platform
+(audio_device_impl.cc:888): output: 0
+(apm_helpers.cc:79): AGC set to 1 with mode 0
+(audio_device_impl.cc:901): webrtc::AudioDeviceModuleImpl::BuiltInNSIsAvailable
+(audio_device_generic.cc:37): webrtc::AudioDeviceGeneric::BuiltInNSIsAvailable: Not supported on this platform
+(audio_device_impl.cc:904): output: 0
+(audio_processing_impl.cc:697): Highpass filter activated: 0
+(audio_processing_impl.cc:711): Gain Controller 2 activated: 0
+(audio_processing_impl.cc:713): Pre-amplifier activated: 0
+(audio_processing_impl.cc:697): Highpass filter activated: 0
+(audio_processing_impl.cc:711): Gain Controller 2 activated: 0
+(audio_processing_impl.cc:713): Pre-amplifier activated: 0
+(apm_helpers.cc:104): NS set to 1
+(webrtc_voice_engine.cc:471): Stereo swapping enabled? 0
+(webrtc_voice_engine.cc:476): NetEq capacity is 50
+(webrtc_voice_engine.cc:482): NetEq fast mode? 0
+(webrtc_voice_engine.cc:488): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:494): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:505): Delay agnostic aec is enabled? 0
+(webrtc_voice_engine.cc:515): Extended filter aec is enabled? 0
+(webrtc_voice_engine.cc:525): Experimental ns is enabled? 0
+(webrtc_voice_engine.cc:541): Typing detection is enabled? 1
+(audio_processing_impl.cc:697): Highpass filter activated: 1
+(audio_processing_impl.cc:711): Gain Controller 2 activated: 0
+(audio_processing_impl.cc:713): Pre-amplifier activated: 0
+(message_queue.cc:518): Message took 474ms to dispatch. Posted from: cricket::ChannelManager::Init@../../pc/channel_manager.cc:135
+(message_queue.cc:518): Message took 476ms to dispatch. Posted from: webrtc::CreateModularPeerConnectionFactory@../../pc/peer_connection_factory.cc:102
+(rtc_event_log_impl.cc:70): Creating legacy encoder for RTC event log.
+(peer_connection_factory.cc:480): Using default network controller factory
+(bitrate_prober.cc:64): Bandwidth probing enabled, set to inactive
+(paced_sender.cc:399): ProcessThreadAttached 0xd15870b0
+(cpu_info.cc:49): Available number of cores: 8
+(aimd_rate_control.cc:101): Using aimd rate control with back off factor 0.85
+(remote_bitrate_estimator_single_stream.cc:71): RemoteBitrateEstimatorSingleStream: Instantiating.
+(openssl_identity.cc:44): Making key pair
+(peer_connection.cc:5124): Local and Remote descriptions must be applied to get the SSL Role of the SCTP transport.
+(openssl_identity.cc:92): Returning key pair
+(openssl_certificate.cc:58): Making certificate for WebRTC
+(openssl_certificate.cc:108): Returning certificate
+(media_session.cc:334): Duplicate id found. Reassigning from 102 to 127
+(media_session.cc:334): Duplicate id found. Reassigning from 104 to 125
+(media_session.cc:334): Duplicate id found. Reassigning from 106 to 124
+(media_session.cc:334): Duplicate id found. Reassigning from 103 to 123
+(media_session.cc:334): Duplicate id found. Reassigning from 105 to 122
+CreateSessionDescription->OnSuccess
+(p2p_transport_channel.cc:489): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:498): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:505): Set ping most likely connection to 0
+(p2p_transport_channel.cc:512): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:525): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:534): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:553): Set receiving_switching_delay to 1000
+(dtls_srtp_transport.cc:61): Setting RTCP Transport on data transport 0
+(dtls_srtp_transport.cc:66): Setting RTP Transport on data transport d342bf10
+(p2p_transport_channel.cc:426): Set ICE ufrag: Yuc5 pwd: 0ggAHZt/qUggfznFBIuj0Ate on transport data
+(peer_connection.cc:3835): Session: 6961336319976242521 Old state: kStable New state: kHaveLocalOffer
+(peer_connection.cc:5124): Local and Remote descriptions must be applied to get the SSL Role of the SCTP transport.
+(basic_port_allocator.cc:339): Start getting ports with prune_turn_ports disabled
+v=0
+o=- 6961336319976242521 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+a=ice-ufrag:Yuc5
+a=ice-pwd:0ggAHZt/qUggfznFBIuj0Ate
+a=ice-options:trickle
+a=fingerprint:sha-256 0F:DB:C2:E4:F4:DA:9A:23:3E:23:70:F2:22:CB:EA:8F:34:68:55:47:41:FF:9F:18:B0:EC:8E:B6:07:84:A6:7C
+a=setup:actpass
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+
+(webrtcconsole.cpp:64): `anonymous-namespace'::DummySetSessionDescriptionObserver::OnSuccess
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(basic_port_allocator.cc:854): Network manager has started
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(basic_port_allocator.cc:768): Allocate ports on 2 networks
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:322): Port[d343a210::1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1391): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:3973439045:1:udp:2122260223:10.0.0.105:53346:local::0:Yuc5:0ggAHZt/qUggfznFBIuj0Ate:1:0:0]
+(basic_port_allocator.cc:943): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port ready.
+(jsep_transport_controller.cc:1276): data Transport 1 state changed. Check if state is complete.
+(stun_port.cc:415): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 53346 typ host generation 0 ufrag Yuc5 network-id 1
+(basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Udp
+(port.cc:322): Port[d3450e70::1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port created with network cost 0
+(basic_port_allocator.cc:1391): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d3450e70:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d3450e70:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Gathered candidate: Cand[:2218435994:1:udp:2122194687:192.168.99.1:53347:local::0:Yuc5:0ggAHZt/qUggfznFBIuj0Ate:4:0:0]
+(basic_port_allocator.cc:943): Port[d3450e70:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port ready.
+(stun_port.cc:415): Port[d3450e70:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Starting STUN host lookup for stun.l.google.com:19302
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 53347 typ host generation 0 ufrag Yuc5 network-id 4
+(thread.cc:303): Waiting for the thread to join, but blocking calls have been disallowed
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(thread.cc:303): Waiting for the thread to join, but blocking calls have been disallowed
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Relay
+(basic_port_allocator.cc:915): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:267671721:1:udp:1686052607:93.57.86.154:55040:stun:10.0.0.105:53346:Yuc5:0ggAHZt/qUggfznFBIuj0Ate:1:0:0]
+(basic_port_allocator.cc:1020): Port[d343a210:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port completed gathering candidates.
+OnIceCandidate: candidate:267671721 1 udp 1686052607 93.57.86.154 55040 typ srflx raddr 10.0.0.105 rport 53346 generation 0 ufrag Yuc5 network-id 1
+(basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Relay
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Tcp
+(port.cc:322): Port[d346cfd0::1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d346cfd0:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d346cfd0:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:2723553973:1:tcp:1518280447:10.0.0.105:50948:local::0:Yuc5:0ggAHZt/qUggfznFBIuj0Ate:1:0:0]
+(basic_port_allocator.cc:943): Port[d346cfd0:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port ready.
+(basic_port_allocator.cc:1020): Port[d346cfd0:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port completed gathering candidates.
+OnIceCandidate: (basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Tcp
+candidate:2723553973 1 tcp 1518280447 10.0.0.105 50948 typ host tcptype passive generation 0 ufrag Yuc5 network-id 1(port.cc:322): Port[d346d430::1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port created with network cost 0
+
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d346d430:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d346d430:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Gathered candidate: Cand[:3401144682:1:tcp:1518214911:192.168.99.1:50949:local::0:Yuc5:0ggAHZt/qUggfznFBIuj0Ate:4:0:0]
+(basic_port_allocator.cc:943): Port[d346d430:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port ready.
+(basic_port_allocator.cc:1020): Port[d346d430:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port completed gathering candidates.
+OnIceCandidate: candidate:3401144682 1 tcp 1518214911 192.168.99.1 50949 typ host tcptype passive generation 0 ufrag Yuc5 network-id 4
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(rtc_event_log_impl.cc:70): Creating legacy encoder for RTC event log.
+(peer_connection_factory.cc:480): Using default network controller factory
+(bitrate_prober.cc:64): Bandwidth probing enabled, set to inactive
+(paced_sender.cc:399): ProcessThreadAttached 0xd347b3b0
+(aimd_rate_control.cc:101): Using aimd rate control with back off factor 0.85
+(remote_bitrate_estimator_single_stream.cc:71): RemoteBitrateEstimatorSingleStream: Instantiating.
+(openssl_identity.cc:44): Making key pair
+(peer_connection.cc:5124): Local and Remote descriptions must be applied to get the SSL Role of the SCTP transport.
+(webrtc_sdp.cc:3182): Ignored line: a=sctpmap:5000 webrtc-datachannel 1024
+(openssl_identity.cc:92): Returning key pair
+(webrtc_sdp.cc:1817): AddSctpDataCodec: Got SCTP Port Number 5000
+(openssl_certificate.cc:58): Making certificate for WebRTC
+Received session description :v=0
+o=- 6961336319976242521 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+a=ice-ufrag:Yuc5
+a=ice-pwd:0ggAHZt/qUggfznFBIuj0Ate
+a=ice-options:trickle
+a=fingerprint:sha-256 0F:DB:C2:E4:F4:DA:9A:23:3E:23:70:F2:22:CB:EA:8F:34:68:55:47:41:FF:9F:18:B0:EC:8E:B6:07:84:A6:7C
+a=setup:actpass
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+(openssl_certificate.cc:108): Returning certificate
+(p2p_transport_channel.cc:489): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:498): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:505): Set ping most likely connection to 0
+(p2p_transport_channel.cc:512): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:525): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:534): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:553): Set receiving_switching_delay to 1000
+(dtls_srtp_transport.cc:61): Setting RTCP Transport on data transport 0
+(dtls_srtp_transport.cc:66): Setting RTP Transport on data transport d347a2c0
+(p2p_transport_channel.cc:437): Received remote ICE parameters: ufrag=Yuc5, renomination disabled
+(peer_connection.cc:3835): Session: 7925953267680476644 Old state: kStable New state: kHaveRemoteOffer
+(peer_connection.cc:5124): Local and Remote descriptions must be applied to get the SSL Role of the SCTP transport.
+Error Set Remote Candidates
+(webrtcconsole.cpp:64): `anonymous-namespace'::DummySetSessionDescriptionObserver::OnSuccess
+(peer_connection.cc:5151): Local and Remote descriptions must be applied to get the SSL Role of the session.
+CreateSessionDescription->OnSuccess
+(dtls_srtp_transport.cc:61): Setting RTCP Transport on data transport 0
+(dtls_srtp_transport.cc:66): Setting RTP Transport on data transport d347a2c0
+(p2p_transport_channel.cc:426): Set ICE ufrag: f5h7 pwd: 3l0komCZOgWIccD+bq5lw0rx on transport data
+(dtls_transport.cc:370): DtlsTransport[data|1|__]: DTLS setup complete.
+(peer_connection.cc:3835): Session: 7925953267680476644 Old state: kHaveRemoteOffer New state: kStable
+(basic_port_allocator.cc:339): Start getting ports with prune_turn_ports disabled
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(basic_port_allocator.cc:768): Allocate ports on 2 networks
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(basic_port_allocator.cc:854): Network manager has started
+(basic_port_allocator.cc:107): Filtered out ignored networks:
+v=0
+o=- 7925953267680476644 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+b=AS:30
+a=ice-ufrag:f5h7
+a=ice-pwd:3l0komCZOgWIccD+bq5lw0rx
+a=ice-options:trickle
+a=fingerprint:sha-256 6D:C1:0A:B3:83:8A:2B:6C:20:1C:D5:28:CC:D6:0C:2D:30:AD:B5:16:4C:80:4D:20:1E:37:7C:32:65:C0:A6:5D
+a=setup:active
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+
+(basic_port_allocator.cc:109): Net[Software:::1/128:Loopback:id=3]
+(webrtcconsole.cpp:64): `anonymous-namespace'::DummySetSessionDescriptionObserver::OnSuccess
+(basic_port_allocator.cc:109): Net[Software:127.0.0.1/32:Loopback:id=2]
+(webrtc_sdp.cc:3182): Ignored line: a=sctpmap:5000 webrtc-datachannel 1024
+(basic_port_allocator.cc:768): Allocate ports on 2 networks
+(webrtc_sdp.cc:1817): AddSctpDataCodec: Got SCTP Port Number 5000
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Udp
+Received session description :(port.cc:322): Port[d34c2130::1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port created with network cost 0
+v=0
+o=- 7925953267680476644 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+b=AS:30
+a=ice-ufrag:f5h7
+a=ice-pwd:3l0komCZOgWIccD+bq5lw0rx
+a=ice-options:trickle
+a=fingerprint:sha-256 6D:C1:0A:B3:83:8A:2B:6C:20:1C:D5:28:CC:D6:0C:2D:30:AD:B5:16:4C:80:4D:20:1E:37:7C:32:65:C0:A6:5D
+a=setup:active
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+(basic_port_allocator.cc:1391): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:3973439045:1:udp:2122260223:10.0.0.105:64346:local::0:f5h7:3l0komCZOgWIccD+bq5lw0rx:1:0:0]
+(basic_port_allocator.cc:943): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port ready.
+(jsep_transport_controller.cc:1276): data Transport 1 state changed. Check if state is complete.
+(stun_port.cc:415): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Udp
+(port.cc:322): Port[d348e6d0::1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port created with network cost 0
+(basic_port_allocator.cc:1391): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d348e6d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d348e6d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Gathered candidate: Cand[:2218435994:1:udp:2122194687:192.168.99.1:64347:local::0:f5h7:3l0komCZOgWIccD+bq5lw0rx:4:0:0]
+(basic_port_allocator.cc:943): Port[d348e6d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port ready.
+(stun_port.cc:415): Port[d348e6d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Starting STUN host lookup for stun.l.google.com:19302
+(thread.cc:303): Waiting for the thread to join, but blocking calls have been disallowed
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(thread.cc:303): Waiting for the thread to join, but blocking calls have been disallowed
+(dtls_srtp_transport.cc:61): Setting RTCP Transport on data transport 0
+(dtls_srtp_transport.cc:66): Setting RTP Transport on data transport d342bf10
+(p2p_transport_channel.cc:437): Received remote ICE parameters: ufrag=f5h7, renomination disabled
+(dtls_transport.cc:370): DtlsTransport[data|1|__]: DTLS setup complete.
+(peer_connection.cc:3835): Session: 6961336319976242521 Old state: kHaveLocalOffer New state: kStable
+(peer_connection.cc:3765): Changing IceConnectionState 0 => 1
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 64346 typ host generation 0 ufrag f5h7 network-id 1
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 64347 typ host generation 0 ufrag f5h7 network-id 4
+(webrtcconsole.cpp:64): `anonymous-namespace'::DummySetSessionDescriptionObserver::OnSuccess
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Relay
+(basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Relay
+(basic_port_allocator.cc:915): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:267671721:1:udp:1686052607:93.57.86.154:54726:stun:10.0.0.105:64346:f5h7:3l0komCZOgWIccD+bq5lw0rx:1:0:0]
+(basic_port_allocator.cc:1020): Port[d34c2130:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port completed gathering candidates.
+OnIceCandidate: candidate:267671721 1 udp 1686052607 93.57.86.154 54726 typ srflx raddr 10.0.0.105 rport 64346 generation 0 ufrag f5h7 network-id 1
+(basic_port_allocator.cc:1320): Net[Broadcom:10.0.0.105/32:Ethernet:id=1]: Allocation Phase=Tcp
+(port.cc:322): Port[d34cff30::1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d34cff30:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d34cff30:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Gathered candidate: Cand[:2723553973:1:tcp:1518280447:10.0.0.105:50954:local::0:f5h7:3l0komCZOgWIccD+bq5lw0rx:1:0:0]
+(basic_port_allocator.cc:943): Port[d34cff30:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port ready.
+(basic_port_allocator.cc:1020): Port[d34cff30:data:1:0:local:Net[Broadcom:10.0.0.105/32:Ethernet:id=1]]: Port completed gathering candidates.
+OnIceCandidate: candidate:2723553973 1 tcp 1518280447 10.0.0.105 50954 typ host tcptype passive generation 0 ufrag f5h7 network-id 1
+(basic_port_allocator.cc:1320): Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]: Allocation Phase=Tcp
+(port.cc:322): Port[d34959d0::1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port created with network cost 0
+(basic_port_allocator.cc:878): Adding allocated port for data
+(basic_port_allocator.cc:897): Port[d34959d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Added port to allocator
+(basic_port_allocator.cc:915): Port[d34959d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Gathered candidate: Cand[:3401144682:1:tcp:1518214911:192.168.99.1:50955:local::0:f5h7:3l0komCZOgWIccD+bq5lw0rx:4:0:0]
+(basic_port_allocator.cc:943): Port[d34959d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port ready.
+(basic_port_allocator.cc:1020): Port[d34959d0:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port completed gathering candidates.
+OnIceCandidate: candidate:3401144682 1 tcp 1518214911 192.168.99.1 50955 typ host tcptype passive generation 0 ufrag f5h7 network-id 4
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:92): Binding request timed out from 192.168.99.1:53347 (VirtualBox Host-Only Network #7)
+(basic_port_allocator.cc:1020): Port[d3450e70:data:1:0:local:Net[VirtualBox:192.168.99.1/32:Ethernet:id=4]]: Port completed gathering candidates.
+(basic_port_allocator.cc:1122): All candidates gathered for data:1:0
+(p2p_transport_channel.cc:841): P2PTransportChannel: data, component 1 gathering complete
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(peer_connection.cc:6404): Usage signature is 2278
+Unable to set receiver candidates
+(stun_port.cc:561): sendto : [0x00002743] Tentativo di operazione del socket verso una rete non raggiungibile.
+(sctp_transport.cc:821): SctpTransport->SendQueuedStreamResets(): Failed to send a stream reset for 1 streams : [0x00000009] Bad file descriptor
+(peer_connection.cc:856): Session: 6961336319976242521 is destroyed.
+(openssl_stream_adapter.cc:916): Cleanup
+(paced_sender.cc:399): ProcessThreadAttached 0x0
+(paced_sender.cc:399): ProcessThreadAttached 0x0
+(rtc_event_log_impl.cc:210): Stopping WebRTC event log.
+(rtc_event_log_impl.cc:227): WebRTC event log successfully stopped.
+(sctp_transport.cc:821): SctpTransport->SendQueuedStreamResets(): Failed to send a stream reset for 1 streams : [0x00000009] Bad file descriptor
+(peer_connection.cc:856): Session: 7925953267680476644 is destroyed.
+(openssl_stream_adapter.cc:916): Cleanup
+(paced_sender.cc:399): ProcessThreadAttached 0x0
+(paced_sender.cc:399): ProcessThreadAttached 0x0
+(rtc_event_log_impl.cc:210): Stopping WebRTC event log.
+(rtc_event_log_impl.cc:227): WebRTC event log successfully stopped.
+(webrtc_video_engine.cc:449): WebRtcVideoEngine::~WebRtcVideoEngine
+(webrtc_voice_engine.cc:208): WebRtcVoiceEngine::~WebRtcVoiceEngine
+(audio_device_impl.cc:804): webrtc::AudioDeviceModuleImpl::StopPlayout
+(audio_device_impl.cc:808): output: 0
+(audio_device_impl.cc:835): webrtc::AudioDeviceModuleImpl::StopRecording
+(audio_device_impl.cc:839): output: 0
+(audio_device_impl.cc:853): webrtc::AudioDeviceModuleImpl::RegisterAudioCallback
+(audio_device_buffer.cc:79): webrtc::AudioDeviceBuffer::RegisterAudioCallback
+(audio_device_impl.cc:351): webrtc::AudioDeviceModuleImpl::Terminate
+(audio_device_impl.cc:320): webrtc::AudioDeviceModuleImpl::~AudioDeviceModuleImpl
+(audio_device_core_win.cc:533): webrtc::AudioDeviceWindowsCore::~AudioDeviceWindowsCore destroyed
+(audio_device_core_win.cc:580): AudioDeviceWindowsCore::~AudioDeviceWindowsCore() the Avrt DLL module is now unloaded
+(audio_device_buffer.cc:73): AudioDeviceBuffer::~dtor
+(message_queue.cc:518): Message took 52ms to dispatch. Posted from: cricket::ChannelManager::~ChannelManager@../../pc/channel_manager.cc:48
+(message_queue.cc:518): Message took 54ms to dispatch. Posted from: webrtc::PeerConnectionFactoryProxyWithInternal<class webrtc::PeerConnectionFactoryInterface>::~PeerConnectionFactoryProxyWithInternal@C:\progetti\webrtc_meetup\src\api/peer_connection_factory_proxy.h:26

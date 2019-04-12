@@ -1,0 +1,4 @@
+host only networking 192.168.56.1
+cd c:\Program Files\Oracle\VirtualBox
+VBoxManage list webcams
+VboxManage controlvm "lubuntu1804" webcam attach .2

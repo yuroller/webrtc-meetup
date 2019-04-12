@@ -1,0 +1,81 @@
+Encrypted
+
+CreateSessionDescription->OnSuccess
+v=0
+o=- 5217779576196791445 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+a=ice-ufrag:+MUa
+a=ice-pwd:gPi43rYDTILgLkhWhrNypvbH
+a=ice-options:trickle
+a=fingerprint:sha-256 EC:E4:71:AE:5C:7F:4B:20:32:12:5F:7C:1B:83:2E:20:65:D1:4B:F5:D1:F6:33:52:3C:28:AF:88:69:75:23:0B
+a=setup:actpass
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 58946 typ host generation 0 ufrag +MUa network-id 1
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 58947 typ host generation 0 ufrag +MUa network-id 2
+OnIceCandidate: candidate:2723553973 1 tcp 1518280447 10.0.0.105 50784 typ host tcptype passive generation 0 ufrag +MUa network-id 1
+OnIceCandidate: candidate:3401144682 1 tcp 1518214911 192.168.99.1 50785 typ host tcptype passive generation 0 ufrag +MUa network-id 2
+Received session description :v=0
+o=- 5217779576196791445 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+a=ice-ufrag:+MUa
+a=ice-pwd:gPi43rYDTILgLkhWhrNypvbH
+a=ice-options:trickle
+a=fingerprint:sha-256 EC:E4:71:AE:5C:7F:4B:20:32:12:5F:7C:1B:83:2E:20:65:D1:4B:F5:D1:F6:33:52:3C:28:AF:88:69:75:23:0B
+a=setup:actpass
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+CreateSessionDescription->OnSuccess
+v=0
+o=- 3852454726004875291 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+b=AS:30
+a=ice-ufrag:EtCc
+a=ice-pwd:3VbSOVDTDUCXhiQ6LnsstVpB
+a=ice-options:trickle
+a=fingerprint:sha-256 13:0B:BE:D9:49:00:CE:A3:82:43:B9:3B:EA:28:6E:AC:F0:98:99:1E:33:BF:27:5C:57:D1:3B:2E:E6:82:82:32
+a=setup:active
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+
+OnIceCandidate: candidate:3973439045 1 udp 2122260223 10.0.0.105 58948 typ host generation 0 ufrag EtCc network-id 1
+Received session description :v=0
+o=- 3852454726004875291 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE data
+a=msid-semantic: WMS
+m=application 9 DTLS/SCTP 5000
+c=IN IP4 0.0.0.0
+b=AS:30
+a=ice-ufrag:EtCc
+a=ice-pwd:3VbSOVDTDUCXhiQ6LnsstVpB
+a=ice-options:trickle
+a=fingerprint:sha-256 13:0B:BE:D9:49:00:CE:A3:82:43:B9:3B:EA:28:6E:AC:F0:98:99:1E:33:BF:27:5C:57:D1:3B:2E:E6:82:82:32
+a=setup:active
+a=mid:data
+a=sctpmap:5000 webrtc-datachannel 1024
+OnIceCandidate: candidate:2218435994 1 udp 2122194687 192.168.99.1 58949 typ host generation 0 ufrag EtCc network-id 2
+Data channel is open
+Data channel is open
+Data channel is open
+Data channel is open
+Text message received='Message from caller'
+Text message received='Message from receiver'
+Data channel is open
